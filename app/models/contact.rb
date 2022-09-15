@@ -6,4 +6,8 @@ class Contact
   field :email, type: String
   field :age, type: Integer
   field :observations, type: String
+
+  def adulthood?
+    self.age >= 18
+  end
 end

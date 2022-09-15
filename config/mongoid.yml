@@ -178,7 +178,7 @@ test:
     default:
       database: agenda_rails_test
       hosts:
-        - localhost:27017
+        - 172.17.0.2:27017
       options:
         read:
           mode: :primary
