@@ -1,0 +1,12 @@
+<label>Name:</label> <p><%= @contact.attributes["name"]%></p>
+<label>Age:</label> <p><%= @contact.attributes["age"]%></p>
+<label>Email:</label> <p><%= @contact.attributes["email"]%></p>
+<label>Observations:</label> <p><%= @contact.attributes["observations"]%></p>
+<label>Phone:</label> <p><%= @contact.attributes["phone"]%></p>
+
+<%= link_to "Apagar COntact", contact_path(@contact), data:{
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+
+}%>
+<%= link_to "Editar COntact", edit_contact_path(@contact)%>

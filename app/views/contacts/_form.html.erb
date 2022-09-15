@@ -1,0 +1,25 @@
+<%= form_with model: contact do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :age %><br>
+    <%= form.text_field :age %>
+  </p>
+  <p>
+    <%= form.label :observations %><br>
+    <%= form.text_field :observations %>
+  </p>
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+  <p>
+    <%= form.label :phone %><br>
+    <%= form.text_field :phone %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,32 @@
+<h1>Contact#index</h1>
+<% if @contacts.count > 0 %>
+    <% @contacts.each do |contact|  %>
+        <p>
+            <strong>Nome:</strong>
+            <%= contact.name%>
+        </p>    
+        <p>
+            <strong>age:</strong>
+            <%= contact.age%>
+        </p>    
+        <p>
+            <strong>E-mail:</strong>
+            <%= contact.email%>
+        </p>    
+        <p>
+            <strong>Phone:</strong>
+            <%= contact.phone%>
+        </p>    
+        <p>
+            <strong>Observações:</strong>
+            <%= contact.observations%>
+        </p>    
+        <%= link_to "Detalhar COntact", contact_path(contact)%>
+    <%end%>
+<%else%>
+    <p>Não existe contatos cadastrados!</p>
+
+
+<%end%>
+
+<%= link_to "Add COntact", new_contact_path %>
